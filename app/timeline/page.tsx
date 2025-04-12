@@ -8,7 +8,10 @@ import { Card } from "@/components/ui/card"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100">
+    <main className="min-h-screen bg-gray-100 relative">
+      {/* Static vertical line - now fixed to the viewport */}
+      <div className="fixed left-1/4 top-0 bottom-0 w-px bg-gray-300 z-10 h-screen" />
+
       <InfiniteScrollingCards />
     </main>
   )
